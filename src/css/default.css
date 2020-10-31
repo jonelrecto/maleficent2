@@ -1,0 +1,173 @@
+/*
+**************************************************************
+This theme is the default shipping theme, it includes some
+decent defaults, but is separate from the calendar component
+to make it easier for users to implement their own themes w/o
+having to override as much.
+**************************************************************
+*/
+
+/* Header */
+
+.theme-default .cv-header,
+.theme-default .cv-header-day {
+	background-color: #f0f0f0;
+}
+
+.theme-default .cv-header .periodLabel {
+	font-size: 1.5em;
+}
+
+.theme-default .cv-header button {
+	color: #7f7f7f;
+}
+
+.theme-default .cv-header button:disabled {
+	color: #ccc;
+	background-color: #f7f7f7;
+}
+
+/* Grid */
+
+.theme-default .cv-day.today {
+	opacity: .5;
+	background-color: #027be3;
+}
+
+.theme-default .cv-day.past {
+	background-color: #969696;
+}
+
+.theme-default .cv-day.outsideOfMonth {
+	background-color: #fafafa;
+}
+
+/* Events */
+
+.theme-default .cv-event {
+	font-size: 0.67em;
+	border-color: #e0e0f0;
+	border-radius: 0.5em;
+	background-color: #e7e7ff;
+	text-overflow: ellipsis;
+	color: white;
+}
+/*pastel colors*/
+
+.theme-default .cv-event.pastelpink {
+	background-color: #e91e63;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.pastelred {
+	background-color: #ff5177;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.pastelpurple {
+	background-color: #673ab7;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.pastellavender {
+	background-color: #e040fb;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.pastelorange {
+	background-color: #f7d08a;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.pastelyellow {
+	background-color: #f2b632;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.pastelgreen {
+	background-color: #2e8b57;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.pastelblue {
+	background-color: #bae1ff;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.darkpurple {
+	background-color: #9d6079;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.pink {
+	background-color: #ed2350;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.shadesofgray {
+	background-color: #294552;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.limegreen {
+	background-color: #00b349;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.shadesofgreen {
+	background-color: #007939;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.shadesofblue {
+	background-color: #005b95;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.whiteblue {
+	background-color: #00aab7;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.yellow {
+	background-color: #FFFF00;
+	border-color: #e7d7f7;
+}
+.theme-default .cv-event.orange {
+	background-color: #ea7d15;
+	border-color: #f7e0c7;
+}
+.theme-default .cv-event.shadesofpink {
+	background-color: #f05457;
+	border-color: #f7e0c7;
+}
+.theme-default .cv-event.olive {
+	background-color: #1a6406;
+	border-color: #f7e0c7;
+}
+.theme-default .cv-event.saladyellow {
+	background-color: #c5b513;
+	border-color: #f7e0c7;
+}
+
+.theme-default .cv-event.continued::before,
+.theme-default .cv-event.toBeContinued::after {
+	content: " \21e2 ";
+	color: #999;
+}
+
+.theme-default .cv-event.toBeContinued {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.theme-default .cv-event.hasUrl:hover {
+	text-decoration: underline;
+}
+
+.theme-default .cv-event.continued {
+	border-left-style: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* Event Times */
+
+.theme-default .cv-event .startTime,
+.theme-default .cv-event .endTime {
+	font-size: 1.0em;
+	font-weight: 200;
+	color: white;
+}
+
+/* Drag and drop */
+
+.theme-default .cv-day.draghover {
+	box-shadow: inset 0 0 0.2em 0.2em yellow;
+}
